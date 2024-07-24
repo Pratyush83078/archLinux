@@ -1,0 +1,71 @@
+CONF FILE:
+	sudo nano /etc/pacman.conf >uncoment color,ILoveCandy
+	/etc/default/grub GRUB_TIMEOUT_STYLE:hidden esc key to get grub menu , sudo grub-mkconfig -o /boot/grub/grub.cfg (update grub),loglevel=3 quiet splash psmouse.proto=bare i8042.nopnp
+	ls /etc/sway
+	/etc/xdg/foot/foot.ini
+	/etc/systemd/logind.conf
+	/etc/modprobe.d/blacklist.conf
+	
+WILL INSTALL:
+	pacman-contrib
+	ufw > sudo ufw enable > sudo ufw status verbose > sudo systemctl wnable ufw.service
+	syncthing
+	sxhkd
+	tmux
+	xf86-synaptic:
+	wget
+	
+SUGGESTION:
+	use rsync for backup
+
+PACKAGE INSTALLED:
+	intel-ucode
+	geany
+	rsynd
+	feh,ranger
+	xorg-desktop-portal-gtk,xorg-desktop-portal
+	wlp
+	man-db
+	pavucontorl
+	fuse2 for appimage 
+	sudo dd if=path/to/os-image.iso of=path/to/disk(dev/sda..) status=progress
+	tlp 
+	pipx 
+	bleachbit
+	
+COMMANDS:
+	du -sh /var/cache/pacman/pkg/
+	flag:--asdeps,pacman -Qe
+	fc-list : family style
+	sudo modprobe -r psmouse ; sudo modprobe psmouse ; /etc/modprobe.d/
+	pacman -Q
+	systemctl --user status xdg-desktop-portal
+	flatpak remove --unused , --delete-data
+	swaymsg output eDP-1 mode 1366x768@48Hz
+	rm -rf /tmp/* ; rm -rf ~/.cache/*
+	
+TO DO: 
+	#~  brightness: brightnessctl
+	#~  nightLight: gammastep
+	#~  bluetooth:bluez and bluez-utils, (turn off),imp:stop, disable
+	#~  soundCheck: pamixer(support in pipewire)
+	 
+	#~  bar hide : done via github 
+	#~  change font:Meslo LGM Nerd Font
+	#~  nano colorful:nano ~/.nanorc
+ 	#~  alacritty/foot:foot(sixel support, resource efficient)
+	#~  geany theme:done
+		support
+		package(autoremove):
+		autotiling
+		tlp
+		
+		clipboard,screenshot
+		menu, support(flatpak and func):
+		wallpaper,imagePreview,lock:
+	#~  touchpad: speed:pointer_accel -1 to 1
+	 
+	
+	
+#~ made 40-libinput-config /etc/x11 
+
