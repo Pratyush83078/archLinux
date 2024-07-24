@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+#~ src="$HOME/Documents/Scripts"
+# Modules
+cpu=$(~/Documents/shFiles/cpubar)
+ram=$(neofetch memory | sed 's/.*memory: \([0-9]\+\)MiB.*/\1/')
+temp=$(cat /sys/class/thermal/thermal_zone7/temp | cut -c 1-2)
+#ssid=$(iwgetid -r)
+net=$(/home/prem/Documents/shFiles/netspeed)
+charge=$(upower -d  | grep percentage | cut -d: -f2 | head -n1 | sed 's/ //g')
+vol=$(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}')
+time=$(date +%I:%M\ %p)
+batstate=$(upower -d  | grep state | head -n1 | cut -d: -f2 | sed 's/ //g')
+mute=$(pactl get-sink-mute @DEFAULT_SINK@ | cut -d: -f2 | sed 's/ //g')
+
+# Logical functions
+# -----------------------------------------------------------------------
+if [ $batstate == "charging" ]
+then
+	state="^$charge"
+elif [ $batstate == "fully-charged" ]
+then
+	state="FULL"
+elif [ $( echo $charge | cut -d% -f1)  -lt 30 ] && [ $batstate != "charging" ]
+then
+	notify-send -u critical "Battery below 30%" "Charge Immediately"
+	state="CRIT $charge"
+else
+	state="$charge"
+fi
+
+if [ $mute == yes ]
+then
+	sound=$(echo MUTE)
+else
+	sound=$(echo $vol)
+fi
+
+if [ ! -z $(pidof wf-recorder) ]
+then
+	rec=$(echo REC)
+fi 
+# Bar runs here
+# -----------------------------------------------------------------------
+echo "$net $rec $cpu $temp°C  MEM:$ram  $time | $state"
+#echo "CPU $cpu MEM $ram $net $sound $time "
