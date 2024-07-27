@@ -1,0 +1,267 @@
+{
+   "checksum": "a09ece52efd84eb66a70287a1e63a3a2",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13365633106506242",
+            "date_last_used": "13366558680820953",
+            "guid": "881f6c00-ea38-4425-a6bf-52a234abf304",
+            "id": "7",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "",
+            "type": "url",
+            "url": "https://claude.ai/new"
+         }, {
+            "date_added": "13365639785578329",
+            "date_last_used": "13366119130203604",
+            "guid": "35109ee5-e024-43bc-90bf-415081728ec1",
+            "id": "9",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "",
+            "type": "url",
+            "url": "https://chat.deepseek.com/coder"
+         }, {
+            "date_added": "13365800511723396",
+            "date_last_used": "13366273186724616",
+            "guid": "b61ec23f-166c-4ecc-b594-28e29f7227ab",
+            "id": "21",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "",
+            "type": "url",
+            "url": "https://uptac.admissions.nic.in/"
+         }, {
+            "date_added": "13365937412354557",
+            "date_last_used": "13366053774695600",
+            "guid": "7fa7fb52-0e7b-4f76-a9c8-564b4ac2ba7a",
+            "id": "27",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "",
+            "type": "url",
+            "url": "https://web.telegram.org/a/#777000"
+         }, {
+            "date_added": "13365975044719088",
+            "date_last_used": "0",
+            "guid": "9a11d7a0-e4ba-4bc3-967f-fe1ad35f5cda",
+            "id": "30",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "",
+            "type": "url",
+            "url": "https://techadmissionshry.gov.in/"
+         }, {
+            "date_added": "13366061477009523",
+            "date_last_used": "13366407046445900",
+            "guid": "ae0515a9-12de-470d-bd99-2189cbc51226",
+            "id": "32",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "",
+            "type": "url",
+            "url": "https://flathub.org/"
+         }, {
+            "date_added": "13366112554772435",
+            "date_last_used": "13366116146377516",
+            "guid": "76a67442-12a2-4f2b-99a7-1f998d66d658",
+            "id": "34",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "",
+            "type": "url",
+            "url": "https://search.brave.com/"
+         }, {
+            "date_added": "13366117981892224",
+            "date_last_used": "0",
+            "guid": "c480744f-1dd8-438f-b327-f5c4bc00f66b",
+            "id": "35",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "",
+            "type": "url",
+            "url": "https://ollama.com/"
+         }, {
+            "date_added": "13366313112389216",
+            "date_last_used": "0",
+            "guid": "a0ca4a8f-ea4a-4c48-bdea-427b7460cf8b",
+            "id": "42",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "",
+            "type": "url",
+            "url": "https://keep.google.com/#home"
+         }, {
+            "date_added": "13366375019488037",
+            "date_last_used": "0",
+            "guid": "178c7830-6b84-4a0d-afd8-00274a40bfbc",
+            "id": "44",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "",
+            "type": "url",
+            "url": "https://groq.com/"
+         } ],
+         "date_added": "13365630695331307",
+         "date_last_used": "0",
+         "date_modified": "13366375019488037",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13365630705060909",
+            "date_last_used": "0",
+            "guid": "c8af9df7-21e4-4e2d-90d8-7ed8f0250721",
+            "id": "5",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "ungoogled-chromium first run page",
+            "type": "url",
+            "url": "chrome://ungoogled-first-run/"
+         }, {
+            "date_added": "13365717275074039",
+            "date_last_used": "0",
+            "guid": "ed0d9a93-c5ad-433c-8fc1-a0f7c19af24a",
+            "id": "11",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "pacman - ArchWiki",
+            "type": "url",
+            "url": "https://wiki.archlinux.org/title/Pacman"
+         }, {
+            "date_added": "13365762158789068",
+            "date_last_used": "0",
+            "guid": "35741934-0197-4fff-adc5-9ec68e41bdbf",
+            "id": "13",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Ungoogled Extensions",
+            "type": "url",
+            "url": "https://www.ungoogledextensions.com/#"
+         }, {
+            "date_added": "13365766639460578",
+            "date_last_used": "0",
+            "guid": "cf00981e-fe70-45f4-9af8-05d4551ccb33",
+            "id": "15",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "OneTab - Chrome Web Store",
+            "type": "url",
+            "url": "https://chromewebstore.google.com/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall"
+         }, {
+            "date_added": "13365769156824193",
+            "date_last_used": "0",
+            "guid": "c9d92bff-d6ee-4062-86e5-098d253ee03d",
+            "id": "17",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Explore - Codeberg.org",
+            "type": "url",
+            "url": "https://codeberg.org/explore/repos"
+         }, {
+            "date_added": "13365776217137443",
+            "date_last_used": "0",
+            "guid": "37a70acc-46c2-4719-97b2-770ab7a8522a",
+            "id": "19",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Project Summaries - Python Packaging User Guide",
+            "type": "url",
+            "url": "https://packaging.python.org/"
+         }, {
+            "date_added": "13365846023693719",
+            "date_last_used": "0",
+            "guid": "00394a48-13f6-42f7-9d68-1eccc693fcdf",
+            "id": "23",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Awesome Wallpapers - wallhaven.cc",
+            "type": "url",
+            "url": "https://wallhaven.cc/"
+         }, {
+            "date_added": "13365853667364134",
+            "date_last_used": "13365855833436147",
+            "guid": "e1b8fd7e-2e26-4c17-a63f-58b8a6bc8f28",
+            "id": "25",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "women, dark hair, long hair, moles, looking at viewer, illustration, pastel, plants, blushing, minimalism, simple background, ultrawide, anime girls | 3400x1440 Wallpaper - wallhaven.cc",
+            "type": "url",
+            "url": "https://wallhaven.cc/w/wed6k6"
+         }, {
+            "date_added": "13365957894198771",
+            "date_last_used": "0",
+            "guid": "a77e9613-d0ad-4d80-be55-5489266acb72",
+            "id": "28",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "OneTab - Shared tabs",
+            "type": "url",
+            "url": "https://www.one-tab.com/page/7HVwxM28TLi1T4t7VDN9ig"
+         }, {
+            "date_added": "13366191609880833",
+            "date_last_used": "0",
+            "guid": "1c17e8f2-b3b1-4380-a33f-4004163732f1",
+            "id": "38",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Llama Coder - Visual Studio Marketplace",
+            "type": "url",
+            "url": "https://marketplace.visualstudio.com/items?itemName=ex3ndr.llama-coder"
+         }, {
+            "date_added": "13366272732646775",
+            "date_last_used": "0",
+            "guid": "5331ae6d-47ac-4111-82d2-55971135bf2e",
+            "id": "40",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "sway-output(5) — Arch manual pages",
+            "type": "url",
+            "url": "https://man.archlinux.org/man/sway-output.5.en"
+         } ],
+         "date_added": "13365630695331310",
+         "date_last_used": "0",
+         "date_modified": "13366313112389216",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13365630695331312",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
