@@ -556,3 +556,5 @@ cd gtk-3.0
 bak-forArch
 source ~/.bashrc
 bak-forLinux
+bak-forArch
+ls 
