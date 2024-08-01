@@ -1,0 +1,70 @@
+/** Some apps use titlebar class and some window */
+.titlebar,
+window {
+	border-radius: 3px;
+	box-shadow: none;
+	background:rgba(0,10,10,0.9);
+	color:rgba(180,180,190,.9) ;
+	
+}
+
+/** also remove shadows */
+decoration {
+	box-shadow: none;
+	height:3px;
+	
+}
+
+decoration:backdrop {
+	box-shadow: none;
+}
+
+
+
+
+/* Hide title bars */
+headerbar.titlebar {
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+headerbar.titlebar button.titlebutton {
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    background:black;
+}
+
+/* Minimize scrollbars */
+scrollbar {
+    background-color: transparent;
+    border: none;
+}
+
+scrollbar slider {
+    min-width: 6px;
+    min-height: 6px;
+    background-color: alpha(#888, 0.6);
+}
+
+/* Add more custom styles here */
+notebook {
+/*
+  background-color: #a939f0;
+*/
+}
+window label {
+/*
+  background-color: #898989;
+*/
+}
+box * {
+  
+}
+window *{
+		background:rgba(0,10,10,0.9);
+
+}

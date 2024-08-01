@@ -6,6 +6,7 @@ CONF FILE:
 	/etc/systemd/logind.conf
 	/etc/modprobe.d/blacklist.conf
 	.xinitrc : exec i3 ; to xorg X11 exec i3 on startx in tty
+	
 WILL INSTALL:
 	pacman-contrib
 	ufw > sudo ufw enable > sudo ufw status verbose > sudo systemctl wnable ufw.service
@@ -14,6 +15,7 @@ WILL INSTALL:
 	tmux
 	xf86-synaptic:
 	wget
+	archcraft
 	
 SUGGESTION:
 	use rsync for backup
@@ -32,6 +34,9 @@ PACKAGE INSTALLED:
 	tlp 
 	pipx 
 	bleachbit
+	lxappearance
+	dconf-editor,gnome-tweaks
+	notesnook
 	
 COMMANDS:
 	du -sh /var/cache/pacman/pkg/
@@ -46,29 +51,32 @@ COMMANDS:
 	git config --global credential.helper cache;  git config --global credential.helper 'cache --timeout=3600' 'cache --time..'=store (to store permanently) #to set
 	git config --global --unset credential.helper  #to unset
 	tar.gz= tar xvfz file.tar.gz ; x=extract, v=verbose, f=fileNme,z=only for compressed file  ; ./config ; make ; sudo make install;
+	geoclue service
+	ui.prefersReducedMotion 1 , user_pref( settigs,value )
+	fc-list : family style file | grep "Mono"
+	xdg-settings set default-web-browser librewolf.desktop
 	
 TO DO:
-	#~  brightness: brightnessctl
-	#~  nightLight: gammastep
-	#~  bluetooth:bluez and bluez-utils, (turn off),imp:stop, disable
-	#~  soundCheck: pamixer(support in pipewire)
+	#~ brightness: brightnessctl
+	#~ nightLight: gammastep
+	#~ bluetooth:bluez and bluez-utils, (turn off),imp:stop, disable
+	#~ soundCheck: pamixer(support in pipewire)
 	 
-	#~  bar hide : done via github 
-	#~  change font:Meslo LGM Nerd Font
-	#~  nano colorful:nano ~/.nanorc
- 	#~  alacritty/foot:foot(sixel support, resource efficient)
-	#~  geany theme:done
-		support
-		package(autoremove):
-		autotiling
-		tlp
-		
-		clipboard,screenshot
-		menu, support(flatpak and func):
-		wallpaper,imagePreview,lock:
-	#~  touchpad: speed:pointer_accel -1 to 1
+	#~ bar hide : done via github 
+	#~ change font:Meslo LGM Nerd Font
+	#~ nano colorful:nano ~/.nanorc
+	#~ alacritty/foot:foot(sixel support, resource efficient)
+	#~ geany theme:done
+	#~ autotiling,tlp :done
+	package(autoremove):
+	
+	hey can you tell me why doesn't it worked when i directly run my code in that file
+	gtkTheme,notification,terminal and file productivity
+	nvim, status bar,menu,font,
+	clipboard,screenshot,
+	imagePreview,lock:
+	
+	touchpad fix,touchpad: speed:pointer_accel -1 to 1,unrecognizing
 	 
-	
-	
-#~ made 40-libinput-config /etc/x11 
+#~ made 40-libinput-config /etc/x11 but didn't worked due to wayland
 
