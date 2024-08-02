@@ -114,7 +114,7 @@ bindsym Mod4+y exec ~/Downloads/freetube_0.21.1_amd64.AppImage
 bindsym $mod+n exec gammastep -O 3800
 bindsym $mod+Shift+n exec pkill gammastep 
 bindsym $mod+b exec librewolf
-bindsym Mod4+f exec pcmanfm
+bindsym Mod4+f exec thunar
 bindsym Mod4+Return exec geany
 bindsym Mod4+l exec swaylock -f -c 000000
 bindsym Mod4+v exec vscodium
@@ -288,7 +288,9 @@ client.focused_inactive #66666600 #00000000 #bbbbdd00 #aaaadd00 #bbbbdd00
 for_window [class="^.*"] border pixel 3; opacity 0.90
 #for_window [class="^.*"] opacity 0.95
 #for_window [class="Volume Control"] floating enable
-
+for_window [title="foot"] floating enable, resize set 600 400, move position 780 380
+#for_window [title="Geany"] floating enable;
+for_window [app_id="geany"] floating enable, resize set 600 400, move position 780 380
 include /etc/sway/config.d/*
 #set $gnome-schema org.gnome.desktop.interface
 

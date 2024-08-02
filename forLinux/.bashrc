@@ -11,7 +11,7 @@ alias grep='grep --color=auto'
 
 
 #export PATH= /usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
-export PATH=$PATH:$HOME/.local/bin:$HOME/Downloads/jdk-22.0.2/bin
+export PATH=$PATH:$HOME/.local/bin
 #CUSTOM-SCRIPT
 alias bak-forLinux='cd ~/Documents && cp ~/.bashrc ~/.config/sway/config ~/.config/gtk-3.0/gtk.css ~/Documents/forLinux/ && git add ~/Documents/forLinux && git commit -m "automated: bashrc,sway_config,gtk.css" && git push origin main'
 

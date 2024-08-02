@@ -7,7 +7,7 @@ CONF FILE:
 	/etc/modprobe.d/blacklist.conf
 	.xinitrc : exec i3 ; to xorg X11 exec i3 on startx in tty
 	
-WILL INSTALL:
+WILL SEE:
 	pacman-contrib
 	ufw > sudo ufw enable > sudo ufw status verbose > sudo systemctl wnable ufw.service
 	syncthing
@@ -16,7 +16,7 @@ WILL INSTALL:
 	xf86-synaptic:
 	wget
 	archcraft
-	
+	leaflet:web
 SUGGESTION:
 	use rsync for backup
 
@@ -36,7 +36,11 @@ PACKAGE INSTALLED:
 	bleachbit
 	lxappearance
 	dconf-editor,gnome-tweaks
-	notesnook
+	notesnook,qownnotes
+	dmidecode for bios etc imformation
+	#~ gparted , gnome-disk,dosfstools(for fat32 vvimp)
+	gvfs(vvimp,trash,removabledisks), udisk2(preinstalled:demon manages removabledisk),thunar,thunar-volman
+	expac
 	
 COMMANDS:
 	du -sh /var/cache/pacman/pkg/
@@ -55,6 +59,8 @@ COMMANDS:
 	ui.prefersReducedMotion 1 , user_pref( settigs,value )
 	fc-list : family style file | grep "Mono"
 	xdg-settings set default-web-browser librewolf.desktop
+	ranger --copy-config=rifle
+	find / -name "xdg-display-portal-termfilechooser" 2>/dev/null
 	
 TO DO:
 	#~ brightness: brightnessctl
@@ -75,7 +81,7 @@ TO DO:
 	nvim, status bar,menu,font,
 	clipboard,screenshot,
 	imagePreview,lock:
-	
+	document-viewer:zathura,zathura-pdf-poppler
 	touchpad fix,touchpad: speed:pointer_accel -1 to 1,unrecognizing
 	 
 #~ made 40-libinput-config /etc/x11 but didn't worked due to wayland

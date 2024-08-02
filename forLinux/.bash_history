@@ -1,379 +1,3 @@
-echo $GTK_THEME 
-echo $GTK_THEME
-soft-reboot
-sudo systemctl soft-reboot
-sway
-soft-reboot
-echo $GTK_THEME
-cd .config/gtk-3.0/
-gtk-application-prefer-dark-theme = true
-gsettings set org.gnome.desktop.interface color-scheme prefer-dark
-lxappearance
-chmod 644 ~/.config/gtk-3.0/settings.ini
-5
-gsettings set org.gnome.desktop.interface gtk-theme Adwaita
-man -5 sway
-man 5 sway
-nano import-gsettings
-chmod +x import-gsettings 
-./import-gsettings 
-geany
-echo $GTK_THEME
-nano .config/gtk-3.0/settings.ini
-./import-gsettings 
-geany
-export GTK_THEME=Adwaita:dark;
-geany
-dconf-editor
-.config/sway/config
-nano .config/gtk-3.0/settings.ini
-paru -S lxappearance
-lxappearance
-nano .config/sway/config
-nano .config/gtk-3.0/settings.ini
-gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark
-gsettings set org.gnome.desktop.interface gtk-theme Arc
-gsettings set org.gnome.desktop.interface gtk-theme Arc-Dark
-hg nano /
-hg cd /
-cd /usr/share/themes
-cd Arc-Derk
-cd gtk-3
-cd gtk-3.0/
-exi
-nano settings.ini
-sudo pacman -Rns dconf-editor gnome-tweaks
-nano .config/gtk-3.0/gtk.css
-cd /usr/lib
-cd xsettings
-nano xsettings
-paru -S vscodium
-cd .config/geany
-cd colorschemes/
-flatpak list
-flatpak uninstall floorp vscodium brave
-sudo flatpak uninstall --unused
-flatpak uninstall --unused
-flatpak list
-flatpak uninstall freedesktop
-flatpak uninstall mesa
-flatpak uninstall gl.default
-flatpak uninstall default
-flatpak list
-flatpak uninstall openh
-w-off
-b-off
-paru -S vscodium 
-vscodium
-htop
-vscodium
-sudo systemctl soft-shutdown
-nano .config/sway/config
-sudo libinput list-devices
-sudo libinput list-devices | grep Device
-sudo reboot
-sway
-clear
-neofetch memory
-clear
-b-off
-sudo systemcl suspend
-sudo systemctl suspend
-swa
-sway
-sudo modprobe -r psmouse
-sudo modprobe psmouse
-sudo modprobe -r psmouse
-vim .config/sway/config
-nvim .config/sway/config
-vim .config/sway/config
-nano .config/sway/config
-sudo libinput list-devices | grep Device
-libinput
-paru -S libinput
-modprobe
-modprobe -h
-sudo modprobe -a
-sudo dmesg | grep -i touchpad
-sudo dmesg | grep  touchpad
-sudo pacman -Rns xf86-input-libinput
-sudo pacman -Rns xorg
-sudo pacman -Rns x11
-sudo pacman -Rns startx
-dmesg | grep -i touchpad
-sudo dmesg | grep -i touchpad
-lmesg | grep i2c_hid
-lsmod | grep i2c_hid
-sudo modprobe i2c_hid
-sudo pacman -Syu
-sudo pacman -S libinput
-sudo udevadm trigger
-sudo modprobe -r i2c_hid && sudo modprobe i2c_hid
-journalctl -b | grep -i touchpad
-xinput
-echo $XDG_SESSION_TYPE
-sudo libinput debug-events
-dmesg | grep -i touchpad
-sudo dmesg | grep -i touchpad
-journalctl -b | grep -i touchpad
-vim .config/sway/config
-sudo pacman -S gnome-themes-extra
-sudo libinput list-devices
-nano .config/sway/config
-geany .config/sway/config
-vscodium .config/sway/config
-nano .config/gtk-3.0/gtk.css
-nano .config/gtk-3.0/settings.ini
-nano .config/gtk-3.0/gtk.css
-nano .config/gtk-3.0/settings.ini
-vscodium
-vscod
-vscodium
-sway
-sudo libinput list-devices | grep Device
-echo $XDG_SESSION_TYPE
-echo $GTK_THEME
-ls /usr/share/fonts
-ls /usr/local/share/fonts
-ls /usr/local/share/
-ls /usr/local/share/man
-ls /usr/local/share/man/Downloads
-ls /usr/local/share/man/
-ls ~/.local/share/fonts
-ls ~/.local/share/
-luakig
-luakit
-open .
-geany
-ls Documents
-fc-list : family style file | grep "Mono"
-ls Documentsclear
-neofetch memroy
-cd Downloads
-cd 
-nano .config/gtk-3.0/settings.ini
-paru -S gnome-shell-extensions-inspector
-nano .config/gtk-3.0/gtk.css
-geany .config/gtk-3.0/gtk.css 
-shutdown now
-sway
-ranger
-w-off
-b-off
-t-off
-sudo libinput list-devices | grep Device
-/usr/share/applications/codium.desktop
-open/usr/share/applications/codium.desktop
-which vscodium
-echo vscodium
-echo $vscodium
-echo /usr/bin/vscodium
-clea
-man 5 sway
-man 5 sway-bar
-man 7 sway
-man 7 sway-protocol
-touch ex.json
-cat ex.json  [
-cat ex.json
-man 7 swaybar-protocol
-cd Documents/shFiles/
-rm ex.json
-paru -S notesnook
-paru -S notesnook-bin
-notesnook-bin
-notesnook
-unzip 1---31-07-2024-\(-11-07-AM-\)-.zip 
-ls 1---31-07-2024-\(-11-07-AM-\)-.html
-cat ./1--31
-ls 1---31-07-2024-\(-11-07-AM-\)-.html
-cat 1---31-07-2024-\(-11-07-AM-\)-.html
-rm -rf 1---31-07-2024-\(-11-07-AM-\)-.zip 1---31-07-2024-\(-11-07-AM-\)-.html
-./import-gsettings 
-cat import-gsettings
-rm import-gsettings 
-ls 
-notesnook focus-mode
-nano .config/sway/config
-b-on
-sway
-sudo modprobe --remove i2c_hid_acpi
-sudo modprobe i2c_hid_acpi
-sudo libinput list-devices | grep Device
-paru -S fossify
-paru -S fossify-notes
-cd Downloads/
-tar xvfz Notes-1.1.0.tar.gz 
-cd Notes-1.1.0/
-ls -a
-./config
-sudo make install
-nano .config/sway/config
-cd ..
-rm rf Notes-1.1.0 Notes-1.1.0.gz
-rm -rf Notes-1.1.0 Notes-1.1.0.tar.gz
-paru -S sway-borders
-paru -S sway-border=
-paru -S sway-border
-sudo pacman -S sway-borders
-clar
-sudo pacman -S sway-borders
-nano .config/sway/config
-sudo pacman -S sway-borders-git 
-paru -S sway-borders-git 
-sudo pacman -S yay
-pacman -S --needed git base-devel
-sudo pacman -S --needed git base-devel
-cd Downloads
-cd yya
-cd ..
-rm -rf yay
-git clone https://aur.archlinux.org/yay-bin.git
-la
-cd yay-bin/
-makepkg -si
-yay -S sway-borders-git 
-man sway-borders-gi
-man sway-borders-git
-man 4 sway-borders-giDt
-man 4 sway-borders-git
-man 4 sway-borders
-man  sway-borders
-man sway-borders
-man sway-borders-git
-man sway
-man 5 sway
-man sway
-man 5 sway
-yay -Rns sway-borders-git 
-yay -Rns sway-borders
-yay -Qe
-sway-bordr
-sway-border
-autotiling
-nano .config/sway/config
-yay -S gnome-clipboard
-paru -S gnome-clipboard
-cb
-cb copy
-yay -S copyq
-b-on
-gksudo
-sudo pacman -S gksudo
-yay -S gksudo
-yay -S gksudo2
-paru -S gksudo
-sudo pacman -S polkit
-pkexec b-on
-pkexec w-off
-pkexec systemctl
-yay -S gksu
-man pkexec
-geany man pkexec
-geany
-geany man pkexec
-nano man polkit
-man polkit
-pacman -S lxpolkit
-sudo pacman -S lxpolkit
-yay -S lxpolkit
-yay -S lxpolkit-git
-lxpolkit
-pxexec git
-pkexec git
-sudo pacman -S lxpolkit
-sudo pacman -S parcellite
-parcellite
-sudo pacman -S parcellite
-yay -S parcellite
-parcellite
-cd Downloads
-tar xvfz parcellite-1.2.2.tar.xz parcellite-1.2.2/
-tar xvfz parcellite-1.2.2.tar.xz
-tar xvf parcellite-1.2.2.tar.xz
-cd parcellite-1.2.2/
-ls -a
-./config
-./intall_sh
-sudo make install
-cd install-sh
-./install-sh
-./configure.ac
-./autogen.sh
-./config
-make
-./conifgure
-./configure
-./install-sh
-./INSTALL
-chmod +x configure.ac
-./configure.ac
-./configure
-parcellite
-sudo pacman -Rns parcellite
-sudo pacman -Rns parcellite-gtk3
-yay -S parcellite-gtk3
-yay -S clipit
-paru -S clipit
-yay -S pano
-yay -S maccy
-cler
-yay -S copyq-bin
-paru -S copyq
-yay -S clipman
-paru -S clipman
-ls -a
-nano .xinitr
-nano .xinitrc
-neofetch memroy
-sudo reboot
-neofetch memory
-clea
-neofetch memory
-clear
-sway
-startx
-xinput
-sudo libinput list-devices | grep Device
-output
-swaymsg output
-swaymsg output eDP-1 
-swaymsg output 
-man swaymsg output
-man swaymsg output -m
-swaymsg output -m
-paru -S jdk
-yay -S jdk
-sudo pacman -S jkd
-sudo pacman -S jdk
-yay -S javac
-cd Downloads
-rm -rf parcellite-1.2.2 parcellite-1.2.2.tar.xz 
-tar xvfz jdk-22_linux-x64_bin.tar.gz 
-cd jdk-22.0.2/
-cd bin
-javac
-./javac
-echo $PATH
-nano .bashrc
-source .bashrc
-echo $PATH
-java
-java --version
-javac
-nano .bashrc
-source .bashrc
-java --version
-javac --version
-cd Downloads
-cd Documents
-cd javaDSA/
-cd src/
-cd com/pr
-chmod +x funtion.java
-chmod +x ./funtion.java
-chmod +x function.java
-./function.java 
 javac function.java 
 java function.class
 java function
@@ -559,3 +183,443 @@ bak-forLinux
 bak-forArch
 ls 
 bak-forArch
+source .bashrc
+bak-forLinux
+cd 
+bak-forLinux
+nano ../.bashrc
+neofetch memroy
+exi
+neofetch 
+neofetch -terminal
+neofetch --t
+cd standardnotes/
+cd ..
+rm -rf standardnotes/
+LS
+ls -a
+cat .bash
+cat .bash_history
+cd 
+ranger
+man ranger
+feh
+cd Pictures
+feh
+feh -h
+feh
+cd pictures
+feh
+neofetch memroy
+clea
+clear=
+neofetch memroy
+neofetch neofetch memory
+cleara
+neofetch memoryc
+w-off
+cat /proc/bus/input/devices | grep -i touchpad
+cat /proc/bus/input/devices
+cat /proc/bus/input/devices | grep Name
+cat /proc/bus/input/devices
+cat /proc/bus/input/devices | grep touch
+cat /proc/bus/input/devices | grep tou
+cat /proc/bus/input/devices | grep t
+cat /proc/bus/input/devices | grep dell
+cat /proc/bus/input/devices | grep Del
+lshw
+sudo modprobe -v psmouse
+t-off
+sudo libinput list-devices | grep Device
+t-on
+sudo libinput list-devices | grep Device
+cd /etc/udev/rules.d
+ls -a
+sudo libinput debug-events
+sudo systemctl reboot
+sudo dmidocode -s bios-version
+sudo dmidecode -s bios-version
+sudo pacman -S dmidecode
+sudo dmidecode -s bios-version
+sudo dmidecode -t 1
+t-off
+pacman -Qe | grep mesa
+sudo pacman -Qe | grep mesa
+sudo pacman -Qe | grep vul
+lsusb
+lspci
+fwupdmgr
+sudo pacman -Qe | grep fwu
+sudo pacman -Qe | grep fw
+sudo pacman -Qe | grep f
+lspci | grep VGA
+lspci | grep Audio
+dmidocode
+sudo dmidecode -t 1
+sudo dmidecode -s bios-version
+paru -S gnome-disks
+paru -S gnome-disk-utility
+gnome-disk
+gnome-disks
+sudo pacman -S thunar
+w-on
+sudo pacman -S thunar
+thunar
+sudo pacman -S dolphin
+thunar
+cd /
+cd ..
+cd bios
+cd ../bios
+cd lost+found
+lsblk -ndo NAME,SIZE,MODEL | grep -E 'sd[b-z]'
+sudo pacman -S gparted
+gparted
+sudo gparted
+sudo pacman -Rns gparted
+cd Documents/
+chmod +x format_usb.sh 
+./format_usb.sh 
+cd Documents/
+./format_usb.sh
+sudo pacman -S partitionmanager
+sudo pacman -S dosfstools
+thunar
+pcmanfm
+dbus-daemon --session --address=unix:path=$XDG_RUNTIME_DIR/bus
+thunar
+pcmanfm
+lsblk
+cd /sdb
+pcmanmf
+pcmanfm
+cd Documents
+./format_usb.sh 
+sudo pacman -S pcmanfm
+paru -S pcmanfm
+sudo pacman -S udisks2
+pcmanfm
+/usr/share/polkit-1/rules.d/
+cat 50-default.rules
+sudo systemctl restart udisks2
+pcmanfm
+sudo pacman -S gvfs
+sudo systemctl restartgvfs
+sudo systemctl restart gvfs
+sudo pacman -S thunar-volman
+sudo systemctl enable thunar-volman
+sudo pacman -S gvfs
+gvfs
+sudo systemctl start gvfs
+gvfs
+sudo sv start dbus
+sudo systemctl start dbus
+sudo systemctl status polkit
+pkill thunar
+thunar
+dbus-run-session your-desktop-session
+dbus-run-session 
+dbus-run-session sway
+sudo systemctl soft-reboot
+sway
+source .bashrc
+sudo pacman -Rns pcmanfm
+w-off
+t-off
+b-off
+sudo shutdown now
+neofetch memory
+clear
+source .bashrc
+sudo dmidecode -s bios-version
+sudo reboot
+sway
+sudo pacman -Rns udisk2
+sudo pacman -Rns udisk
+sudo pacman -Rns gnome-disks
+sudo pacman -Rns gnome-disk-manager
+pacman -Qe | grep gnome
+sudo pacman -Rns gnome-disk-utility
+pacman -Qe | grep thun
+sudo pacman -Rns thunar-volman
+sudo pacman -S thunar-volman
+usr/bin/foot
+which foot
+sudo pacman -Rns lxappearance
+flatpak uninstall --unused
+flatpak list
+com.github.eneshecan.WhatsAppForLinux 
+flatpak uninstall whatsapp
+flatpak uninstall --unused
+paru -S qownnotes
+yay -S qownnotes-bin
+sudo libinput debug-events
+sudo libinput list-devices | grep Device
+lspci | grep Audio
+yay -S qownnotes
+qownnotes
+pacman -Qe| grep qow
+qownnotes
+pacman -Qe| grep qow
+qownnotes
+which qownnotes
+qownnotes
+pacman -Qe| grep qow
+qownnotes-debug
+xdg-open qownnotes
+xdg-open thunar
+xdg-open Downloads
+xdg-open Documents/javaDSA
+java .
+nano .bashrc
+source .bashrc
+javac
+java ./
+qownnotes
+qownotes
+yay -Rns qownnotes
+cd Documents
+cd ..
+cd Downloads
+cd /home/pr/Downloads/ jdk-22.0.2/
+cd /home/pr/Downloads/jdk-22.0.2/
+cd /home/pr/Downloads/
+cd /
+ls | grep h
+cd home
+cd /home/prem/Downloads/jdk-22.0.2/
+sudo pacman -S jdk
+nano .bashrc
+source .bashrc
+nano .bashrc
+paru -S jdk
+java
+htop
+top | grep vs
+top
+java
+nano .bashrc
+lcear
+top
+top
+htop
+sudo systemctl soft-reboot
+sway
+vscodium
+1400+
+noefetch memory
+echo 1400-800
+echo 1300-800=500
+neofetch 
+sudo systemctl soft-reboot
+neofetch memory
+clear
+clear
+top
+clear
+swya
+sway
+neofetch memory
+clear
+toop
+top
+clear
+neofetch memory
+clear
+shutdown now
+qownnotes
+sudo pacman -S evince
+yay -S zathura
+zathura
+yay -S zathura-pdf-poppler
+man 5 sway
+nano .bashrc
+echo GTK_USE_PORTAL
+echo $GTK_USE_PORTAL
+CLEAR
+clear 
+source .bashrc
+cd .config/
+ls |grep xdg
+ranger
+cd .local/bin/
+touch ranger-file-picker.sh
+nano ranger-file-picker.sh 
+cd .config/
+chmod +x ~/.local/bin/ranger-file-picker.sh
+mkdir xdg-deskpot-portal
+mv xdg-deskpot-portal/ xdg-deskptop-portal/
+mv xd
+mv xdg-deskptop-portal/ xdg-desktop-portal/
+cd xdg-desktop-portal/
+nano portals.conf
+nano ~/.config/xdg-desktop-portal/portals.conf
+nano  org.freedesktop.portal.Desktop.conf
+swaymsg reload
+cd 
+cd .local/bin
+./ranger-file-picker.sh 
+xdg-desktop-menu
+clear
+neofetch memory
+clear
+neofetch memory
+neofetch memory
+clear
+neofetch memory
+clear
+neofetch memory
+lcear
+clear
+neofetch memory
+clear
+neofetch memory
+neofetch
+neofetch memory
+neofetch memory
+clear
+neofetch memory
+neofetch memory
+clear
+neofetch memory
+clear
+neofetch memory
+claer
+clear
+htop
+top
+clear
+sway
+neofetch memory
+clear
+sway
+neofetch memory
+clear
+sway
+sudo systemctl soft-reboo
+sudo systemctl soft-reboot
+cd .local/bin
+mv ./ranger-file-picker.sh ./rfp
+cd 
+cd .config
+cd xdg-desktop-portal/
+nano portals.conf
+nano org.freedesktop.portal.Desktop.conf 
+rfp
+b-off
+w-off
+rfp
+ranger
+cd .config/ranger
+ranger
+nano rc.conf
+sudo pacman -S ranger
+nano rc.conf 
+ranger
+rfp
+ranger
+sudo pacman -Rns ranger
+paru -S ranger
+clea
+rclear
+ranger
+cd .config
+cd ranger
+nano rifle.conf
+ranger
+feh
+nano rc .conf
+nano rc.conf
+nano rifle.conf
+feh
+man feh
+ranger
+rm -rf rc.conf rifle.conf 
+ranger
+cd .config
+.confi
+cd Documents
+cd Downloads/
+xdg-open ./jeemainsession2_ntaonline_in_frontend_web_advancecityintimationslip.pdf 
+ranger
+neofetch memoy
+ranger
+xdg-mime default ranger.desktop inode/ directory
+ranger --copy-config=rifle
+export RANGER_LOAD_DEFAULT_RC=FALSE
+nano .bashrc
+cd .config/
+cd ranger
+nano rifle.conf
+ranger
+ext directory =ranger
+export RANGER_LOAD_DEFAULT_RC=FALSE
+cd .config/ranger/
+nano rifle.conf 
+ranger
+xdg-open 
+xdg-open .
+xdg-open --help
+xdg-open --manual
+xdg-open /Pictures/wallhaven.jpg
+xdg-open /Pictures/wallhaven.png
+xdg-open ~/Pictures/wallhaven.jpg
+xdg-open ~/Pictures/wallhaven.png
+export RANGER_LOAD_DEFAULT_RC=FALSE
+ranger
+xdg-open .
+xdg-settings set default-web-browser ranger.desktop
+xdg-open .
+xdg-settings set default-web-browser firefox.desktop
+xdg-open ~/Pictures/wallhaven.png
+cd .config
+rm -rf thorium pcmanfm xdg-desktop-portal/ 
+cd stacer
+stacer
+cd ..
+rm -rf parcellite 'Standard Notes'/ zed
+nano .bashrc
+nano ../.bashrc
+source .bashrc
+source ../.bashrc
+sudo pacman -Rns ranger
+ranger
+claer
+cd .config
+rm -rf ranger
+ranger
+hg copy
+xdg-settings set default-web-browser librewolf.desktop
+xpac --timefmt='%Y-%m-%d %T' '%l\t%n' | sort | tail -n 20
+expac --timefmt='%Y-%m-%d %T' '%l\t%n' | sort | tail -n 20
+yay -S expac
+expac -S -H M '%k\t%n' packages
+expac -H M "%011m\t%-20n\t%10d" $(comm -23 <(pacman -Qqen | sort) <({ pacman -Qqg xorg; expac -l '\n' '%E' base; } | sort -u)) | sort -n
+expac -S "%o" package
+expac --timefmt='%Y-%m-%d %T' '%l\t%n' | sort | tail -n 20
+girara
+pacman -Qq | grep -Ee '-(bzr|cvs|darcs|git|hg|svn)$'
+pacman -Qi package
+pacman -Qdtq
+b-on
+b-off
+w-off
+b-on
+xdg-mime query default inode/directory
+xdg-mime default thunar.desktop inode/directory
+xdg-mime query default inode/directory
+thunar.desktop
+thunar
+xdg-mime default thunar inode/directory
+xdg-mime query default inode/directory
+xdg-open .
+sudo pacman -S lf
+lf
+xdg-mime query default inode/directory
+xdg-mime default lf inode/directory
+xdg-mime default lf.desktop inode/directory
+xdg-open .
+open .
+lf
+ranger
+cd .config/
