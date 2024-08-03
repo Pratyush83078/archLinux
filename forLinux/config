@@ -13,10 +13,10 @@ font pango:Meslo LGM Nerd Font 8
 # Logo key. Use Mod1 for Alt.
 set $mod Mod1
 # Home row direction keys, like vim
-set $left j
-set $down l
-set $up semicolon
-set $right k
+set $left h
+set $down j
+set $up k
+set $right l
 # Your preferred terminal emulator
 set $term foot
 # Your preferred application launcher
@@ -105,7 +105,8 @@ bindgesture swipe:left workspace next
 
 gaps outer 2
 gaps inner 4
-
+smart_gaps on
+hide_edge_borders smart
 
 ### Key bindings
 exec --no-startup-id  $HOME/.local/bin/autotiling

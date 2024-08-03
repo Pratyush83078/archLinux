@@ -40,7 +40,7 @@ PACKAGE INSTALLED:
 	dmidecode for bios etc imformation
 	#~ gparted , gnome-disk,dosfstools(for fat32 vvimp)
 	gvfs(vvimp,trash,removabledisks), udisk2(preinstalled:demon manages removabledisk),thunar,thunar-volman
-	expac
+	expac,dunst,whatsdesk
 	
 COMMANDS:
 	du -sh /var/cache/pacman/pkg/
@@ -61,7 +61,7 @@ COMMANDS:
 	xdg-settings set default-web-browser librewolf.desktop
 	ranger --copy-config=rifle
 	find / -name "xdg-display-portal-termfilechooser" 2>/dev/null
-	
+	enable ly.service,disable getty@tty2.service
 TO DO:
 	#~ brightness: brightnessctl
 	#~ nightLight: gammastep
