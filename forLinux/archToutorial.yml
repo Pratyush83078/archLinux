@@ -40,7 +40,8 @@ PACKAGE INSTALLED:
 	dmidecode for bios etc imformation
 	#~ gparted , gnome-disk,dosfstools(for fat32 vvimp)
 	gvfs(vvimp,trash,removabledisks), udisk2(preinstalled:demon manages removabledisk),thunar,thunar-volman
-	expac,dunst,whatsdesk
+	expac,dunst,whatsdesk,obsidian,at(for time)
+	
 	
 COMMANDS:
 	du -sh /var/cache/pacman/pkg/
@@ -62,6 +63,9 @@ COMMANDS:
 	ranger --copy-config=rifle
 	find / -name "xdg-display-portal-termfilechooser" 2>/dev/null
 	enable ly.service,disable getty@tty2.service
+	ui.key.menuAccessKeyFocuses.
+	ozone-platform:wayland : to enable zoom in chromium
+	dunstify "h1" "body" -u low/normal/critical -i icon-name -r id -t 1000 -a appname
 TO DO:
 	#~ brightness: brightnessctl
 	#~ nightLight: gammastep

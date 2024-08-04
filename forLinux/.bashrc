@@ -13,7 +13,8 @@ alias grep='grep --color=auto'
 #export PATH= /usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
 export PATH=$PATH:$HOME/.local/bin
 #CUSTOM-SCRIPT
-alias bak-forLinux='cd ~/Documents && cp ~/.bashrc ~/.config/sway/config ~/.config/gtk-3.0/gtk.css ~/Documents/forLinux/ && git add ~/Documents/forLinux && git commit -m "automated: bashrc,sway_config,gtk.css" && git push origin main'
+
+alias bak-forLinux='cd ~/Documents && cp ~/.bashrc ~/.config/sway/config ~/.config/dunst/dunstrc -r ~/.local/bin/ ~/Documents/forLinux/ && git add ~/Documents/forLinux && git commit -m "automated: bashrc,sway_config,dunstrc" && git push origin main'
 
 alias b-on='sudo systemctl start bluetooth && bluetoothctl connect "FC:58:FA:58:33:B5"'
 alias b-off='sudo systemctl stop bluetooth'
@@ -80,4 +81,10 @@ export PROMPT_COMMAND='history -a; history -n'
 
 #export GTK_THEME=Adwaita:dark
 
-
+timer() {
+  sleep "$1" && dunstify -u critical "timer completed"
+}
+alert() {
+  local time="$1"
+  echo "dunstify -u critical 'Alert' 'Time to take a break or check your schedule'" | at "$time"
+}
