@@ -14,8 +14,6 @@ alias grep='grep --color=auto'
 export PATH=$PATH:$HOME/.local/bin
 #CUSTOM-SCRIPT
 
-alias bak-forLinux='cd ~/Documents && cp ~/.bashrc ~/.config/sway/config ~/.config/dunst/dunstrc -r ~/.local/bin/ ~/Documents/forLinux/ && git add ~/Documents/forLinux && git commit -m "automated: bashrc,sway_config,dunstrc" && git push origin main'
-
 alias b-on='sudo systemctl start bluetooth && bluetoothctl connect "FC:58:FA:58:33:B5"'
 alias b-off='sudo systemctl stop bluetooth'
 alias w-on='nmcli r w on && nmcli d w c "iQOO Z7 5G" password "deadpool"'
@@ -84,7 +82,24 @@ export PROMPT_COMMAND='history -a; history -n'
 timer() {
   sleep "$1" && dunstify -u critical "timer completed"
 }
-alert() {
-  local time="$1"
-  echo "dunstify -u critical 'Alert' 'Time to take a break or check your schedule'" | at "$time"
+#~ alert() {
+  #~ local time="$1"
+  #~ echo "dunstify -u critical 'Alert' 'Time to take a break or check your schedule'" | at "$time"
+#~ }
+
+function bak-forLinux() {
+	
+    cp ~/.bashrc ~/Documents/forLinux/
+    cp -r ~/.config/sway ~/Documents/forLinux/
+    cp ~/.config/dunst/dunstrc ~/Documents/forLinux/
+    cp -r ~/.config/tofi ~/Documents/forLinux/
+    cp -r ~/.local/bin ~/Documents/forLinux/
+    cp ~/.mozilla/firefox/4qatbcuy.default-release/chrome/userChrome.css ~/Documents/forLinux/
+    cp ~/.mozilla/firefox/4qatbcuy.default-release/user.js ~/Documents/forLinux/
+   
+    git -C ~/Documents/forLinux add .
+    read -p "Commit message (default: automated: bashrc, sway, dunstrc, tofi, userChrome, user.js, local/bin): " commit_message
+    commit_message=${commit_message:-"automated: bashrc, sway, dunstrc, tofi, userChrome, user.js, local/bin"}
+    git -C ~/Documents/forLinux commit -m "$commit_message"
+    git -C ~/Documents/forLinux push origin main
 }
