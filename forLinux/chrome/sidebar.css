@@ -1,0 +1,22 @@
+#sidebar-button {
+        margin-left: 10px !important;
+}
+
+#sidebar-header {
+        display: none;
+}
+#sidebar-box {
+        min-width: 0px !important;
+        max-width: 300px !important;
+        min-height: unset !important;
+        max-height: unset !important;
+        border-right: none !important;
+        background: #0f0f0f !important;
+        
+}
+
+#sidebar-splitter {
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+}
