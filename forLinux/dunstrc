@@ -345,8 +345,6 @@
     background = "#24283b"
     foreground = "#a9b1d6"
 	frame_color = "#444B6A"
-	progress_bar_color="#333333"
-	progress_bar_background = "#000000"
     timeout = 5
     override_pause_level = 30
 	
@@ -463,16 +461,21 @@
     #~ history_ignore = yes
 
 [history-ignore-volume]
-appname = "volume"
-history_ignore = yes
+	appname = "volume"
+	history_ignore = yes
 
 [history-ignore-brightness]
-appname = "brightness"
-history_ignore = yes
+	appname = "brightness"
+	history_ignore = yes
 
-[history-ignore-battery]
-summary = ".*battery.*"
-history_ignore = yes
+
+[history-ignore-summary-rule]
+    summary = ":-"
+    history_ignore = yes
+    
+[history-ignore-body-rule]
+    body = "*:-*"
+    history_ignore = yes
 
 #[skip-display]
 #    # This notification will not be displayed, but will be included in the history

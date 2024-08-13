@@ -26,6 +26,6 @@ if [ $BATTERY_LEVEL -lt 35 ] && [ "$(echo $(acpi -b | awk '{print $3}' | tr -d '
     dunstify -u critical "Vostro 3478: Battery Low" "Battery level is at $BATTERY_LEVEL% :-"
 fi
 
-if [ "$BLUETOOTH_BATTERY" -lt 60 ]; then
+if [ "$BLUETOOTH_BATTERY" -lt 50 ]; then
     dunstify -u critical "$DEVICE_NAME Battery Low" "Battery level is at $BLUETOOTH_BATTERY% :-"
 fi

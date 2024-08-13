@@ -6,15 +6,20 @@ run_tofi() {
     echo -e "$options" | tofi --prompt "$prompt" --fuzzy-match true --require-match false
 }
 
+# Fetch the history and binary files
 HISTORY=$(tac ~/.bash_history)
-BINARY_FILES=$(find /usr/bin /bin -type f -executable -print)
-ALL_COMMANDS="$HISTORY\n$BINARY_FILES"
+#~ BINARY_FILES=$(find /usr/bin /bin -type f -executable -print | sed 's|/usr/bin/||; s|/bin/||')
 
+# Combine the commands and remove duplicates using awk
+ALL_COMMANDS=$(echo -e "$HISTORY" | awk '!seen[$0]++')
+
+# Run tofi to select a command
 SELECTED_COMMAND=$(run_tofi "What Ya need? " "$ALL_COMMANDS")
 
 if [ -n "$SELECTED_COMMAND" ]; then
     dunstify "Executing :- " "$SELECTED_COMMAND" -i "$HOME/Downloads/setting.png" -t 800
-    eval "$SELECTED_COMMAND"
-else
-    dunstify "No command entered. Exiting:-" -u low -t 600
+    echo "$SELECTED_COMMAND" >> $HOME/.bash_history
+    
+    # Execute the selected command in an interactive subshell
+    bash -ic "$SELECTED_COMMAND"
 fi

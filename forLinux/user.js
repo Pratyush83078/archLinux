@@ -19,7 +19,7 @@
  * SECTION: SECUREFOX                                                       *
 ****************************************************************************/
 /** TRACKING PROTECTION ***/
-user_pref("browser.contentblocking.category", "strict");
+//~ user_pref("browser.contentblocking.category", "strict");
 user_pref("urlclassifier.trackingSkipURLs", "*.reddit.com, *.twitter.com, *.twimg.com, *.tiktok.com");
 user_pref("urlclassifier.features.socialtracking.skipURLs", "*.instagram.com, *.twitter.com, *.twimg.com");
 user_pref("network.cookie.sameSite.noneRequiresSecure", true);
@@ -58,7 +58,6 @@ user_pref("browser.formfill.enable", false);
 user_pref("security.insecure_connection_text.enabled", true);
 user_pref("security.insecure_connection_text.pbmode.enabled", true);
 user_pref("network.IDN_show_punycode", true);
-
 /** HTTPS-FIRST POLICY ***/
 user_pref("dom.security.https_first", true);
 user_pref("dom.security.https_first_schemeless", true);
@@ -168,8 +167,9 @@ user_pref("browser.urlbar.unitConversion.enabled", true);
 user_pref("browser.urlbar.trending.featureGate", false);
 
 /** NEW TAB PAGE ***/
-user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
-user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
+
+//~ user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
+//~ user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 
 /** POCKET ***/
 user_pref("extensions.pocket.enabled", false);
@@ -247,3 +247,4 @@ user_pref("dom.security.sanitizer.enabled", true);
 /****************************************************************************
  * END: BETTERFOX                                                           *
 ****************************************************************************/
+

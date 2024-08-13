@@ -42,6 +42,7 @@ PACKAGE INSTALLED:
 	gvfs(vvimp,trash,removabledisks), udisk2(preinstalled:demon manages removabledisk),thunar,thunar-volman
 	expac,dunst,whatsdesk,obsidian,at(for time)
 	wl-clipboard,clipman
+	libreoffice
 	
 COMMANDS:
 	du -sh /var/cache/pacman/pkg/
@@ -56,16 +57,19 @@ COMMANDS:
 	git config --global credential.helper cache;  git config --global credential.helper 'cache --timeout=3600' 'cache --time..'=store (to store permanently) #to set
 	git config --global --unset credential.helper  #to unset
 	tar.gz= tar xvfz file.tar.gz ; x=extract, v=verbose, f=fileNme,z=only for compressed file  ; ./config ; make ; sudo make install;
+	github1s.com/ to run vs code
 	geoclue service
 	ui.prefersReducedMotion 1 , user_pref( settigs,value )
+	ui.key.menuAccessKeyFocuses.
 	fc-list : family style file | grep "Mono"
 	xdg-settings set default-web-browser librewolf.desktop
 	ranger --copy-config=rifle
 	find / -name "xdg-display-portal-termfilechooser" 2>/dev/null
 	enable ly.service,disable getty@tty2.service
-	ui.key.menuAccessKeyFocuses.
 	ozone-platform:wayland : to enable zoom in chromium
 	dunstify "h1" "body" -u low/normal/critical -i icon-name -r id -t 1000 -a appname
+	pgrep, ps aux, pkill, kill, killall
+	
 TO DO:
 	#~ brightness: brightnessctl
 	#~ nightLight: gammastep

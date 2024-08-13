@@ -177,13 +177,13 @@ placeholder-text = "...."
 
 	# Maximum number of results to display.
 	# If 0, tofi will draw as many results as it can fit in the window.
-	num-results = 0
+num-results = 0
 
 	# Spacing between results in pixels. Can be negative.
-result-spacing = 20
+result-spacing = 30
 
 	# List results horizontally.
-#~ horizontal = true
+horizontal = true
 
 	# Minimum width of input in horizontal mode.
 	min-input-width = 0
@@ -344,68 +344,68 @@ drun-launch = true
 	# within each other.
 	# include = /path/to/config
 
-font-size=15
-background-color = #110022cc
+#~ font-size=15
+#~ background-color = #110022cc
 
-anchor = center
-width = 100%
-height = 100%
+#~ anchor = center
+#~ width = 100%
+#~ height = 100%
 
-padding-top = 28%
-padding-bottom = 6
-padding-left = 40%
-padding-right = 3
+#~ padding-top = 28%
+#~ padding-bottom = 6
+#~ padding-left = 40%
+#~ padding-right = 3
 
-result-spacing = 20
+#~ result-spacing = 20
 
-input-background = #00000000
-input-background-padding = 0
-input-background-corner-radius = 0
+#~ input-background = #00000000
+#~ input-background-padding = 0
+#~ input-background-corner-radius = 0
 
-default-result-background = #8899dd00
-default-result-background-padding = 0
-default-result-background-corner-radius = 5
+#~ default-result-background = #8899dd00
+#~ default-result-background-padding = 0
+#~ default-result-background-corner-radius = 5
 
-selection-background = #ffaaaa00
-selection-background-padding = 5
-selection-background-corner-radius = 5
-
-
+#~ selection-background = #ffaaaa00
+#~ selection-background-padding = 5
+#~ selection-background-corner-radius = 5
 
 
-#NEW THEME
 
-# Font
+
+#~ #NEW THEME
+
+#~ # Font
 #~ font = Ubuntu Nerd Font
-font-size = 18
+#~ font-size = 18
 
-# Window Style
-anchor = top
-width = 100%
-height = 100%
+#~ # Window Style
+#~ anchor = top
+#~ width = 100%
+#~ height = 100%
 
-outline-width = 0
-border-width = 30
-border-color = #000A
+#~ outline-width = 0
+#~ border-width = 30
+#~ border-color = #000A
 
-min-input-width = 130
-result-spacing = 29
+#~ min-input-width = 130
+#~ result-spacing = 29
 
-padding-top = 25%
-padding-bottom = 0
-padding-left = 17%
-padding-right = 0%
-num-results = 6
-prompt-text = "What Ya Need? "
+#~ padding-top = 25%
+#~ padding-bottom = 0
+#~ padding-left = 17%
+#~ padding-right = 0%
+#~ num-results = 6
+#~ prompt-text = "What Ya Need? "
 
-background-color = #000A
+#~ background-color = #000A
 #~ text-color = #c0caf5
-input-color = #7aa2f7
-selection-color = #7dcfff
-selection-match-color = #9ece6a
+#~ input-color = #7aa2f7
+#~ selection-color = #7dcfff
+#~ selection-match-color = #9ece6a
 
-clip-to-padding = false
-require-match = false
+#~ clip-to-padding = false
+#~ require-match = false
 
 # tofi configuration file
 

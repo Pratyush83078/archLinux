@@ -76,7 +76,8 @@ input "type:touchpad" {
 # Allow switching between workspaces with left and right swipes
 bindgesture swipe:right workspace prev
 bindgesture swipe:left workspace next
-
+bindgesture swipe:down move scratchpad
+bindgesture swipe:up scratchpad show
 #input "2:5:ImPS/2_Logitech_Wheel_Mouse" {
 #	accel_profile flat
 #	pointer_accel 1
@@ -106,13 +107,13 @@ bindsym Mod4+Shift+a exec pkill -9 autotiling*
 bindsym Mod4+y exec ~/Downloads/freetube_0.21.1_amd64.AppImage
 bindsym $mod+n exec gammastep -O 3800
 bindsym $mod+Shift+n exec pkill gammastep 
-bindsym $mod+b exec chromium
+bindsym Mod4+b exec /usr/bin/firefox
 bindsym Mod4+f exec thunar
 bindsym Mod4+Return exec geany
 bindsym Mod4+l exec swaylock -f -c 000000
 bindsym Mod4+v exec $HOME/.local/bin/tofi_clipboard.sh
 bindsym Mod4+n exec notesnook
-
+#~ bindsym --release button3 exec dunstify hello
 #
 # Basics:
 #
@@ -194,7 +195,7 @@ bindsym Mod4+n exec notesnook
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+z splith
+    bindsym $mod+b splith
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
