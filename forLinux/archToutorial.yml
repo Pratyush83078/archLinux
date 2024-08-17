@@ -6,6 +6,7 @@ CONF FILE:
 	/etc/systemd/logind.conf
 	/etc/modprobe.d/blacklist.conf
 	.xinitrc : exec i3 ; to xorg X11 exec i3 on startx in tty
+	/usr/share/applications/
 	
 WILL SEE:
 	pacman-contrib
@@ -25,7 +26,7 @@ PACKAGE INSTALLED:
 	geany
 	rsynd
 	feh,ranger
-	xorg-desktop-portal-gtk,xorg-desktop-portal
+	xorg-desktop-portal-gtk,xorg-desktop-portal,xdg-desktop-portal 1.14.4-1,xdg-desktop-portal-kde 5.24.5-1,xdg-desktop-portal-gtk 1.14.0-1
 	wev: wayland event-viewer 
 	man-db
 	pavucontorl
@@ -42,7 +43,8 @@ PACKAGE INSTALLED:
 	gvfs(vvimp,trash,removabledisks), udisk2(preinstalled:demon manages removabledisk),thunar,thunar-volman
 	expac,dunst,whatsdesk,obsidian,at(for time)
 	wl-clipboard,clipman
-	libreoffice
+	libreoffice,cmake,gimp,calibre,obs-studio,mpv
+	gvfs,android tool,dolphin
 	
 COMMANDS:
 	du -sh /var/cache/pacman/pkg/
@@ -75,7 +77,8 @@ TO DO:
 	#~ nightLight: gammastep
 	#~ bluetooth:bluez and bluez-utils, (turn off),imp:stop, disable
 	#~ soundCheck: pamixer(support in pipewire)
-	 
+	video editing: daVinci,kaden live; image:gimp; screen-streming:obs-studio;
+	
 	#~ bar hide : done via github 
 	#~ change font:Meslo LGM Nerd Font
 	#~ nano colorful:nano ~/.nanorc
@@ -88,9 +91,10 @@ TO DO:
 	gtkTheme,notification,terminal and file productivity
 	nvim, status bar,menu,font,
 	clipboard,screenshot,
-	imagePreview,lock:
-	document-viewer:zathura,zathura-pdf-poppler
+	imagePreview,kitty,lock:
+	document-viewer:
+	playerctl :
 	touchpad fix,touchpad: speed:pointer_accel -1 to 1,unrecognizing
-	 
+	
 #~ made 40-libinput-config /etc/x11 but didn't worked due to wayland
 

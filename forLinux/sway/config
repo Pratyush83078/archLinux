@@ -93,6 +93,9 @@ bindgesture swipe:up scratchpad show
     bindsym XF86AudioRaiseVolume exec pamixer --increase 5 && $HOME/.local/bin/volume.sh
     bindsym XF86AudioLowerVolume exec pamixer --decrease 5 && $HOME/.local/bin/volume.sh
     bindsym XF86AudioMute exec pamixer --toggle-mute && $HOME/.local/bin/volume.sh
+    
+    bindsym XF86AudioPlay exec playerctl play-pause
+#~ bindsym XF86AudioPrev exec playerctl previous
 
 gaps outer 2
 gaps inner 4
@@ -113,6 +116,7 @@ bindsym Mod4+Return exec geany
 bindsym Mod4+l exec swaylock -f -c 000000
 bindsym Mod4+v exec $HOME/.local/bin/tofi_clipboard.sh
 bindsym Mod4+n exec notesnook
+bindsym Mod4+p exec hyprpicker | wl-copy
 #~ bindsym --release button3 exec dunstify hello
 #
 # Basics:
@@ -138,6 +142,7 @@ bindsym Mod4+n exec notesnook
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+ctrl+Shift+e exec swaymsg exit
 #
 # Moving around:
 #
