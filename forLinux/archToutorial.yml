@@ -40,12 +40,12 @@ PACKAGE INSTALLED:
 	notesnook,qownnotes
 	dmidecode for bios etc imformation
 	#~ gparted , gnome-disk,dosfstools(for fat32 vvimp)
-	gvfs(vvimp,trash,removabledisks), udisk2(preinstalled:demon manages removabledisk),thunar,thunar-volman
+	gvfs(vvimp,trash,removabledisks)gvfs-mtp mtpfs , udisks2(preinstalled:demon manages removabledisk),thunar,thunar-volman
 	expac,dunst,whatsdesk,obsidian,at(for time)
 	wl-clipboard,clipman
 	libreoffice,cmake,gimp,calibre,obs-studio,mpv
 	gvfs,android tool,dolphin
-	
+	hyprpicker
 COMMANDS:
 	du -sh /var/cache/pacman/pkg/
 	flag:--asdeps,pacman -Qe
