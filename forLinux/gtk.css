@@ -1,70 +1,251 @@
-/** Some apps use titlebar class and some window */
-.titlebar,
+/* GTK 3.0 Premium Dark Theme - Refined with Transparency */
+
+/* Define color variables for a more premium feel */
+@define-color bg_color rgba(13, 17, 23, 0.95);
+@define-color fg_color #e0e0e0;
+@define-color base_color rgba(22, 27, 34, 0.95);
+@define-color text_color #f0f0f0;
+@define-color selected_bg_color #4f94ef;
+@define-color selected_fg_color #ffffff;
+@define-color accent_color #c792ea;
+@define-color error_color #ff5370;
+
+/* GTK 3.0 Premium Dark Theme - Refined */
+
+/* Define color variables */
+@define-color bg_color #0a0b16;
+@define-color fg_color #a9b1d6;
+@define-color base_color #24283b;
+@define-color text_color #c0caf5;
+@define-color selected_bg_color #7aa2f7;
+@define-color selected_fg_color #1a1b26;
+@define-color accent_color #bb9af7;
+@define-color error_color #f7768e;
+
+
+/* Global styles */
+* {
+    background-color: rgba(0,0,0,0.1);
+    color: @fg_color;
+    border-color: alpha(@fg_color, 0.2);
+    outline-color: alpha(@selected_bg_color, 0.5);
+    -gtk-icon-shadow: none;
+    
+    font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 9pt;
+}
+
+/* Window */
 window {
-	border-radius: 3px;
-	box-shadow: none;
-	background:rgba(0,10,10,0.9);
-	color:rgba(180,180,190,.9) ;
-	
+    background-color: @bg_color;
 }
 
-/** also remove shadows */
-decoration {
-	box-shadow: none;
-	height:3px;
-	
+/* Buttons */
+button {
+    color: @fg_color;
+    border: none;
+    padding: 0px 12px;
+    margin:3px 3px;
+    transition: all 200ms ease;
+    background-image: linear-gradient(alpha(@fg_color, 0.15));
+    border-radius: 4px;
+}
+button:hover {
+    background-color: alpha(@fg_color, 0.15);
+}
+button:active,
+button:checked {
+    background-color: alpha(@selected_bg_color, 0.3);
+    color: @text_color;
 }
 
-decoration:backdrop {
-	box-shadow: none;
+/* Path Bar (for Thunar and similar file managers) just search bar top */
+.path-bar {
+    background-color: @base_color;
+    border-radius: 6px;
+    padding: 1px 2px;
+}
+.path-bar button {
+    background-color: transparent;
+    color: @text_color;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 9px;
+    margin: 2px;
+}
+.path-bar button:hover {
+    background-color: alpha(@fg_color, 0.1);
+}
+.path-bar button:checked,
+.path-bar button:active {
+    background-color: alpha(@selected_bg_color, 0.2);
+    color: @selected_bg_color;
+}
+.path-bar entry {
+    background-color: alpha(@base_color, 0.6);
+    color: @text_color;
+    border: 1px solid alpha(@fg_color, 0.3);
+}
+*::selection {
+  color: white;
+  background: black;
 }
 
 
 
+/* Selection styling  its' important*/
+*:selected {
+    background-color: alpha(@selected_bg_color,1);
+    color: @selected_fg_color;
+}
+/* Improve text selection visibility */
+*:selected:focus {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
 
-/* Hide title bars */
-headerbar.titlebar {
-    min-height: 0;
-    padding: 0;
-    margin: 0;
+
+
+/* Toolbar styling like home icon or search etc in thunar etc */
+toolbar {
+    background-color: @bg_color;
+    border-bottom: 1px solid alpha(@fg_color, 0.1);
+/*	padding:5px; */
+}
+toolbar button {
+    margin: 0 2px;
+    padding:auto;
+}
+
+
+/* Sidebar styling */
+.sidebar {
+    background-color: @base_color;
+    border-right: 0px solid alpha(@fg_color, 0.1);
+}
+.sidebar list {
+    background-color: transparent;
+}
+.sidebar list row:selected {
+    background-color: alpha(@selected_bg_color, 0.3);
+    color: @text_color;
+}
+
+
+/* Improve menu styling ie file edit search etc topbar */
+menu {
+    background-color: shade(@base_color, 1.05);
+    border: 1px solid alpha(@fg_color, 0.2);
+    border-radius: 6px;
+    padding: 1px 0;
+}
+menuitem {
+    padding: 1px 8px;
+}
+
+menuitem:hover {
+    background-color: alpha(@selected_bg_color, 0.2);
+}
+
+/* Improve overall focus indication */
+/*
+*:focus {
+    outline: 2px solid alpha(@selected_bg_color, 0.5);
+    outline-offset: -1px;
+}
+*/
+
+
+/* Improve notebook (tabbed interface) styling ie ctrl+t in thunar new tab*/
+/*
+notebook {
+    background-color: @bg_color;
     border: none;
 }
+notebook header {
+    background-color: shade(@bg_color, 1.05);
+    border-bottom: 1px solid alpha(@fg_color, 0.2);
+}
+notebook tab {
+    background-color: transparent;
+    padding: 8px 12px;
+    margin: 0 1px;
+    border-bottom: 2px solid transparent;
+}
+notebook tab:checked {
+    background-color: alpha(@selected_bg_color, 0.1);
+    border-bottom: 2px solid @selected_bg_color;
+}
+*/
 
-headerbar.titlebar button.titlebutton {
-    min-height: 0;
-    min-width: 0;
-    padding: 0;
-    margin: 0;
-    background:black;
+
+/* Improve overall contrast and premium look ie titlebar in windows*/
+.titlebar {
+    background-color: #fff;
+    color: @fg_color;
+    border-bottom: 1px solid alpha(@fg_color, 0.2);
+}
+.titlebar button {
+    background-color: transparent;
+}
+.titlebar button:hover,.titlebar:hover {
+    background-color: alpha(@bg_color, 0.1);
 }
 
-/* Minimize scrollbars */
+/* Entry (text input) */
+/*
+entry {
+    background-color: @base_color;
+    color: @text_color;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    box-shadow: inset 0 0 0 1px alpha(@fg_color, 0.2);
+}
+
+entry:focus {
+    box-shadow: inset 0 0 0 2px @selected_bg_color;
+}
+*/
+/*
+entry:selected,
+textview text:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+*/
+
+
+/* Lists and Trees */
+/*
+list, tree {
+    background-color: @base_color;
+    color: @text_color;
+}
+
+list row:hover, tree row:hover {
+    background-color: alpha(@fg_color, 0.1);
+}
+
+list row:selected, tree row:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+*/
+
+
+/* Scrollbars*/
 scrollbar {
     background-color: transparent;
-    border: none;
 }
 
 scrollbar slider {
-    min-width: 6px;
+    background-color: alpha(@fg_color, 0.3);
+    border-radius: 9999px;
+    min-width: 3px;
     min-height: 6px;
-    background-color: alpha(#888, 0.6);
 }
 
-/* Add more custom styles here */
-notebook {
-/*
-  background-color: #a939f0;
-*/
-}
-window label {
-/*
-  background-color: #898989;
-*/
-}
-box * {
-  
-}
-window *{
-		background:rgba(0,10,10,0.9);
-
+scrollbar slider:hover {
+    background-color: alpha(@fg_color, 0.5);
 }
