@@ -14,11 +14,12 @@ else
     DEVICE_NAME="Laptop(vostro 3478) -> "
 fi
 
+dunstify -a "volume" "$DEVICE_NAME" -r 1 -h int:value:"$VOLUME" -t 1000 "$VOLUME_INFO%" -i $HOME/Downloads/medium-volume.png
+
 BATTERY_LEVEL=$(acpi -b | awk '{print $4}' | tr -d '%,' | head -n 1)
 BLUETOOTH_BATTERY=$(bluetoothctl info | grep Battery | awk '{print $4}' | tr -d '()')
 
 # Send the notification
-dunstify -a "volume" "$DEVICE_NAME" -r 1 -h int:value:"$VOLUME" -t 1000 "$VOLUME_INFO%" -i $HOME/Downloads/medium-volume.png
 
 # Check if the battery level is below 40%
 if [ $BATTERY_LEVEL -lt 35 ] && [ "$(echo $(acpi -b | awk '{print $3}' | tr -d ','))" == "Discharging" ]; then

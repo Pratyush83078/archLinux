@@ -1,6 +1,7 @@
 /* GTK 3.0 Premium Dark Theme - Refined with Transparency */
 
 /* Define color variables for a more premium feel */
+/*
 @define-color bg_color rgba(13, 17, 23, 0.95);
 @define-color fg_color #e0e0e0;
 @define-color base_color rgba(22, 27, 34, 0.95);
@@ -9,6 +10,7 @@
 @define-color selected_fg_color #ffffff;
 @define-color accent_color #c792ea;
 @define-color error_color #ff5370;
+*/
 
 /* GTK 3.0 Premium Dark Theme - Refined */
 
@@ -25,7 +27,7 @@
 
 /* Global styles */
 * {
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0);
     color: @fg_color;
     border-color: alpha(@fg_color, 0.2);
     outline-color: alpha(@selected_bg_color, 0.5);
@@ -248,4 +250,62 @@ scrollbar slider {
 
 scrollbar slider:hover {
     background-color: alpha(@fg_color, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dialog and Popup styling */
+dialog,
+popover,
+messagedialog,
+.background {
+    background-color: @bg_color;
+    color: @fg_color;
+}
+
+filechooser,
+dialog filechooser {
+    background-color: @bg_color;
+    color: @fg_color;
+}
+
+/* Rest of your existing styles */
+/* ... (keep all other styles as they were) ... */
+
+/* Ensure dialog content is visible */
+dialog *,
+popover *,
+messagedialog *,
+filechooser * {
+    background-color: transparent;
+}
+
+/* Specific styling for file chooser */
+filechooser placessidebar {
+    background-color: @base_color;
+}
+
+filechooser list,
+filechooser flowbox {
+    background-color: @base_color;
+}
+
+filechooser list row:hover,
+filechooser flowbox flowboxchild:hover {
+    background-color: alpha(@fg_color, 0.1);
+}
+
+filechooser list row:selected,
+filechooser flowbox flowboxchild:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
 }

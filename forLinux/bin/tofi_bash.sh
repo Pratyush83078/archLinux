@@ -7,12 +7,13 @@ run_tofi() {
 }
 
 # Fetch the history and binary files
-HISTORY=$(tac ~/.bash_history)
-#~ BINARY_FILES=$(find /usr/bin /bin -type f -executable -print | sed 's|/usr/bin/||; s|/bin/||')
-
+#HISTORY=$(tac ~/.bash_history)
+BINARY_FILES=$(find /usr/bin /bin -type f -executable -print | sed 's|/usr/bin/||; s|/bin/||')
+#BINARY_FILES=$(find /bin -type f -executable -print | sed 's|/bin/||')
+#BINARY_FILES=$(find /bin -type f -executable -print | sed 's|/bin/||')
 # Combine the commands and remove duplicates using awk
-ALL_COMMANDS=$(echo -e "$HISTORY" | awk '!seen[$0]++')
-
+ALL_COMMANDS=$(echo -e "$BINARY_FILES" )
+#ALL_COMMANDS=$(echo -e "$BINARY_FILES" | awk '!seen[$0]++')
 # Run tofi to select a command
 SELECTED_COMMAND=$(run_tofi "What Ya need? " "$ALL_COMMANDS")
 

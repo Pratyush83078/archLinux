@@ -15,7 +15,7 @@ export PATH=$PATH:$HOME/.local/bin
 #CUSTOM-SCRIPT
 
 alias b-on='sudo systemctl start bluetooth && bluetoothctl connect "FC:58:FA:58:33:B5"'
-alias b-off='sudo systemctl stop bluetooth'
+alias b-off='sudo systemctl disable bluetooth && sudo systemctl stop bluetooth'
 alias w-on='nmcli r w on && nmcli d w c "iQOO Z7 5G" password "deadpool"'
 alias w-on2='nmcli r w on && nmcli d w c "PRAMOD RAILWIRE" password "pmsrs1966"'
 alias w-off='nmcli r w off'

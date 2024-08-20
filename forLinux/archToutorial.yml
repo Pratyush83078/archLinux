@@ -46,6 +46,7 @@ PACKAGE INSTALLED:
 	libreoffice,cmake,gimp,calibre,obs-studio,mpv
 	gvfs,android tool,dolphin
 	hyprpicker
+	betterbird
 COMMANDS:
 	du -sh /var/cache/pacman/pkg/
 	flag:--asdeps,pacman -Qe
