@@ -69,7 +69,7 @@ toolbar#nav-bar {
 }
 
 /* If the window is wider than 1000px, use flex layout */
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
     #navigator-toolbox {
         display: flex;
         flex-direction: row;

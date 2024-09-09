@@ -18,7 +18,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term foot
+set $term foot 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -58,7 +58,7 @@ bindsym $mod+m output "HDMI-A-2" toggle ; output "eDP-1" toggle
 exec swayidle -w \
     timeout 400 'swaymsg "output eDP-1 dpms off"' \
     resume 'swaymsg "output eDP-1 dpms on"' \
-    timeout 600 'systemctl suspend' \
+    timeout 900 'systemctl suspend' \
     before-sleep 'nmcli r w off'
 
 
@@ -93,14 +93,14 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 1%- && $HOME/.local/bin/bri
 bindsym XF86AudioRaiseVolume exec pamixer --increase 5 && $HOME/.local/bin/volume.sh
 bindsym XF86AudioLowerVolume exec pamixer --decrease 5 && $HOME/.local/bin/volume.sh
 bindsym XF86AudioMute exec pamixer --toggle-mute && $HOME/.local/bin/volume.sh
-    
-    bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPlay exec playerctl play-pause
+
 #~ bindsym XF86AudioPrev exec playerctl previous
 
 gaps outer 2
 gaps inner 4
 smart_gaps on
-hide_edge_borders smart
+#hide_edge_borders smart
 
 ### Key bindings
 exec --no-startup-id  $HOME/.local/bin/autotiling
@@ -108,22 +108,32 @@ exec --no-startup-id exec wl-paste --watch $HOME/.local/bin/clipboard_save.sh
 bindsym ctrl+Shift+space exec /usr/bin/dunstctl history-pop
 bindsym Mod4+Shift+a exec pkill -9 autotiling*
 bindsym Mod4+y exec ~/Downloads/freetube_0.21.1_amd64.AppImage
-bindsym $mod+n exec gammastep -O 3800
+bindsym $mod+n exec gammastep -O 3000
 bindsym $mod+Shift+n exec pkill gammastep 
 bindsym Mod4+b exec /usr/bin/firefox
-bindsym Mod4+f exec pcmanfm
+bindsym Mod4+f exec thunar
 bindsym Mod4+Return exec geany
 bindsym Mod4+l exec swaylock -f -c 000000
 bindsym Mod4+v exec $HOME/.local/bin/tofi_clipboard.sh
 bindsym Mod4+n exec notesnook
 bindsym Mod4+p exec hyprpicker | wl-copy
-bindsym ctrl+space exec $HOME/.local/bin/tofi_bash.sh
+bindsym $mod+c exec $HOME/.local/bin/tofi_bash.sh
+bindsym $mod+Shift+o exec swaymsg -t get_tree | jq '.. | select(.focused?) | .pid' | xargs -r kill -9
+#bindsym $mod+Shift+Return exec ~/.local/bin/window-restore.sh save
+#bindsym $mod+shift+t exec ~/.local/bin/window-restore.sh restore
 #~ bindsym --release button3 exec dunstify hello
+#bindsym Mod4+Shift+s exec i3-resurrect save && dustify "Saved!!"
+#bindsym $mod+Shift+ctrl+t exec i3-resurrect restore && dunstify "Restored"
+bindsym $mod+s exec dunstify "Sync Enabled" -t 600 && syncthing --no-browser
+bindsym $mod+Shift+s exec dunstify "Sync Disabled" -t 600 && pkill syncthing
+
+
 #
 # Basics:
 #
     # Start a terminal
     bindsym $mod+Return exec $term
+
 
     # Kill focused window
     bindsym $mod+q kill
@@ -136,7 +146,7 @@ bindsym ctrl+space exec $HOME/.local/bin/tofi_bash.sh
     # Despite the name, also works for non-floating windows.
     # Change normal to inverse to use left mouse button for resizing and right
     # mouse button for dragging.
-    floating_modifier $mod normal
+    floating_modifier Mod4 normal
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
@@ -289,11 +299,11 @@ bar {
 client.focused #66666699 #000000 #bbbbdd #55555599 #55555599 
 client.unfocused #66666699 #000000 #bbbbdd #aaaadd00 #bbbbdd00
 client.focused_inactive #66666600 #00000000 #bbbbdd00 #aaaadd00 #bbbbdd00
-for_window [class="^.*"] border pixel 3; opacity 0.90
+for_window [class="^.*"] border pixel 3; 
 #for_window [class="^.*"] opacity 0.95
 #for_window [class="Volume Control"] floating enable
-for_window [title="foot"] floating enable, resize set 600 400, move position 780 380,fullscreen
+for_window [title="$term"] floating enable, resize set 600 400, move position 780 380,fullscreen
 
 #for_window [title="Geany"] floating enable;
-for_window [app_id="geany" title="Geany"] floating enable, resize set 1300 600, move position 20 80
+#for_window [app_id="geany" title="Geany"] floating enable, resize set 1300 600, move position 20 80
 include /etc/sway/config.d/*

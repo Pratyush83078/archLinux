@@ -1,0 +1,26 @@
+{
+  "keyMappings": "unmap /",
+  "settingsVersion": "2.1.2",
+  "exclusionRules": [
+    {
+      "passKeys": "",
+      "pattern": "https?://mail.google.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://piped.video/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://conduit-chi.vercel.app/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://malisipi.github.io/*"
+    },
+    {
+      "passKeys": "+f +t +/ +1 +2 +3 +4 +5 +6 +7 +8 +9 +0 +[ +]",
+      "pattern": "https?://www.youtube.com/*"
+    }
+  ]
+}

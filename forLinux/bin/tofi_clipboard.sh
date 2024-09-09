@@ -3,7 +3,7 @@
 run_tofi() {
     local prompt="$1"
     local options="$2"
-    echo -e "$options" | tofi --prompt "$prompt" --fuzzy-match true --require-match false
+    echo -e "$options" | tofi --prompt "$prompt" --fuzzy-match false --require-match false
 }
 ALL_COMMANDS="$(tac $HOME/clipboard_history.txt)"
 

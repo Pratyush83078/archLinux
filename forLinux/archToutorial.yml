@@ -47,6 +47,7 @@ PACKAGE INSTALLED:
 	gvfs,android tool,dolphin
 	hyprpicker
 	betterbird
+	i3-reserrect
 COMMANDS:
 	du -sh /var/cache/pacman/pkg/
 	flag:--asdeps,pacman -Qe
@@ -62,8 +63,6 @@ COMMANDS:
 	tar.gz= tar xvfz file.tar.gz ; x=extract, v=verbose, f=fileNme,z=only for compressed file  ; ./config ; make ; sudo make install;
 	github1s.com/ to run vs code
 	geoclue service
-	ui.prefersReducedMotion 1 , user_pref( settigs,value )
-	ui.key.menuAccessKeyFocuses.
 	fc-list : family style file | grep "Mono"
 	xdg-settings set default-web-browser librewolf.desktop
 	ranger --copy-config=rifle
@@ -72,7 +71,11 @@ COMMANDS:
 	ozone-platform:wayland : to enable zoom in chromium
 	dunstify "h1" "body" -u low/normal/critical -i icon-name -r id -t 1000 -a appname
 	pgrep, ps aux, pkill, kill, killall
-	
+        ln -s for symlinks
+
+FIREFOX:
+	ui.prefersReducedMotion 1 , user_pref( settigs,value )
+	ui.key.menuAccessKeyFocuses		; extensions.webextensions.restrictedDomains:accounts-static.cdn.mozilla.net,accounts.firefox.com,addons.cdn.mozilla.net,addons.mozilla.org,api.accounts.firefox.com,content.cdn.mozilla.net,discovery.addons.mozilla.org,install.mozilla.org,oauth.accounts.firefox.com,profile.accounts.firefox.com,support.mozilla.org,sync.services.mozilla.com
 TO DO:
 	#~ brightness: brightnessctl
 	#~ nightLight: gammastep

@@ -1,7 +1,7 @@
 #
 # ~/.bashrc
 #
-
+#set -o vi
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -80,7 +80,7 @@ export PROMPT_COMMAND='history -a; history -n'
 #export GTK_THEME=Adwaita:dark
 
 timer() {
-  sleep "$1" && dunstify -u critical "timer completed"
+  sleep "$1" && dunstify -u critical "timer completed $1"
 }
 #~ alert() {
   #~ local time="$1"

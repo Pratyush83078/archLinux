@@ -183,15 +183,13 @@ notebook tab:checked {
 
 /* Improve overall contrast and premium look ie titlebar in windows*/
 .titlebar {
-    background-color: #fff;
+    background-color: @base_color;
     color: @fg_color;
     border-bottom: 1px solid alpha(@fg_color, 0.2);
+    opacity:0.8;
 }
 .titlebar button {
-    background-color: transparent;
-}
-.titlebar button:hover,.titlebar:hover {
-    background-color: alpha(@bg_color, 0.1);
+    background-color: #123;
 }
 
 /* Entry (text input) */
