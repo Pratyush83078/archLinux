@@ -29,6 +29,8 @@ set $menu tofi-drun
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 
 output * bg ~/Pictures/wallhaven.png fill
+output eDP-1 mode 1366x768@48.017Hz
+
 #
 # Example configuration:
 #
@@ -55,11 +57,12 @@ bindsym $mod+m output "HDMI-A-2" toggle ; output "eDP-1" toggle
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
+
 exec swayidle -w \
-    timeout 400 'swaymsg "output eDP-1 dpms off"' \
-    resume 'swaymsg "output eDP-1 dpms on"' \
-    timeout 900 'systemctl suspend' \
-    before-sleep 'nmcli r w off'
+     timeout 400 'swaymsg "output eDP-1 dpms off"' \
+     resume 'swaymsg "output eDP-1 dpms on"' \
+     timeout 600 'systemctl suspend' \
+     before-sleep 'swaylock -f -c 000000'
 
 
 input "type:touchpad" {
@@ -88,11 +91,13 @@ bindgesture swipe:up scratchpad show
 # Read `man 5 sway-input` for more information about this section.
 
 #special shortcuts:
-bindsym XF86MonBrightnessUp exec brightnessctl set +1% && $HOME/.local/bin/brightness.sh
-bindsym XF86MonBrightnessDown exec brightnessctl set 1%- && $HOME/.local/bin/brightness.sh
-bindsym XF86AudioRaiseVolume exec pamixer --increase 5 && $HOME/.local/bin/volume.sh
-bindsym XF86AudioLowerVolume exec pamixer --decrease 5 && $HOME/.local/bin/volume.sh
-bindsym XF86AudioMute exec pamixer --toggle-mute && $HOME/.local/bin/volume.sh
+bindsym XF86MonBrightnessUp exec killall $HOME/.local/bin/brightness.sh; exec brightnessctl set +1% && $HOME/.local/bin/brightness.sh
+bindsym XF86MonBrightnessDown exec killall $HOME/.local/bin/brightness.sh; exec brightnessctl set 1%- && $HOME/.local/bin/brightness.sh
+#bindsym XF86AudioRaiseVolume exec pamixer --increase 5 && pkill -f "$HOME/.local/bin/volume.sh" ; $HOME/.local/bin/volume.sh
+#bindsym XF86AudioRaiseVolume exec pamixer --increase 5 && $HOME/.local/bin/volume.sh
+bindsym XF86AudioRaiseVolume  exec killall $HOME/.local/bin/volume.sh ; exec pamixer --increase 5 && $HOME/.local/bin/volume.sh
+bindsym XF86AudioLowerVolume  exec killall $HOME/.local/bin/volume.sh ; exec pamixer --decrease 5 && exec $HOME/.local/bin/volume.sh
+bindsym XF86AudioMute exec pkill -f "$HOME/.local/bin/volume.sh";exec pamixer --toggle-mute && $HOME/.local/bin/volume.sh
 bindsym XF86AudioPlay exec playerctl play-pause
 
 #~ bindsym XF86AudioPrev exec playerctl previous
@@ -302,7 +307,7 @@ client.focused_inactive #66666600 #00000000 #bbbbdd00 #aaaadd00 #bbbbdd00
 for_window [class="^.*"] border pixel 3; 
 #for_window [class="^.*"] opacity 0.95
 #for_window [class="Volume Control"] floating enable
-for_window [title="$term"] floating enable, resize set 600 400, move position 780 380,fullscreen
+#for_window [title="$term"] floating enable, resize set 600 400, move position 780 380,fullscreen
 
 #for_window [title="Geany"] floating enable;
 #for_window [app_id="geany" title="Geany"] floating enable, resize set 1300 600, move position 20 80

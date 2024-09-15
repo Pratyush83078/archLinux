@@ -104,3 +104,15 @@ function bak-forLinux() {
     git -C ~/Documents/forLinux commit -m "$commit_message"
     git -C ~/Documents/forLinux push origin main
 }
+
+#dv() { q=${2:-$(read -p "Enter quality: " q && echo $q)}; yt-dlp -f "bestvideo[height<=$q]+bestaudio/best[height<=$q]" --write-auto-sub --embed-subs "$1"; }
+#dp() { q=${2:-$(read -p "Enter quality: " q && echo $q)}; yt-dlp -f "bestvideo[height<=$q]+bestaudio/best[height<=$q]" --write-auto-sub --embed-subs -o "%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s" "$1"; }
+#da() { yt-dlp -f "bestaudio/best" -x --audio-format mp3 "$1"; }
+
+#dv() { yt-dlp -f "bv*+ba/b" --write-auto-sub --embed-subs ${2:+-S "height:$2"} "$1"; }
+#dp() { yt-dlp -f "bv*+ba/b" --write-auto-sub --embed-subs -o "%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s" ${2:+-S "height:$2"} "$1"; }
+#da() { yt-dlp -x --audio-format mp3 "$1"; }
+
+dv() { q=${2:-$(read -p "Enter video quality (or press Enter for best): " q && echo $q)}; yt-dlp -f "bv*[height<=${q:-10000}]+ba/b" --write-auto-sub --embed-subs -o "~/Videos/%(title)s.%(ext)s" "$1"; }
+dp() { q=${2:-$(read -p "Enter video quality (or press Enter for best): " q && echo $q)}; yt-dlp -f "bv*[height<=${q:-10000}]+ba/b" --write-auto-sub --embed-subs -o "~/Videos/%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s" "$1"; }
+da() { q=${2:-$(read -p "Enter audio quality (6-0, lower is better, or press Enter for best): " q && echo $q)}; yt-dlp -f "ba" -x --audio-format mp3 ${q:+--audio-quality $q} -o "~/Audio/%(title)s.%(ext)s" "$1"; }

@@ -48,6 +48,7 @@ PACKAGE INSTALLED:
 	hyprpicker
 	betterbird
 	i3-reserrect
+	cpu-autofreq deleted tlp
 COMMANDS:
 	du -sh /var/cache/pacman/pkg/
 	flag:--asdeps,pacman -Qe
