@@ -49,6 +49,8 @@ PACKAGE INSTALLED:
 	betterbird
 	i3-reserrect
 	cpu-autofreq deleted tlp
+	cronie
+	
 COMMANDS:
 	du -sh /var/cache/pacman/pkg/
 	flag:--asdeps,pacman -Qe
@@ -59,7 +61,7 @@ COMMANDS:
 	flatpak remove --unused , --delete-data
 	swaymsg output eDP-1 mode 1366x768@48Hz
 	rm -rf /tmp/* ; rm -rf ~/.cache/*
-	git config --global credential.helper cache;  git config --global credential.helper 'cache --timeout=3600' 'cache --time..'=store (to store permanently) #to set
+	need to install git-credential-manager; config --global credential.helper cache;  git config --global credential.helper 'cache --timeout=3600' 'cache --time..'=store (to store permanently) #to set
 	git config --global --unset credential.helper  #to unset
 	tar.gz= tar xvfz file.tar.gz ; x=extract, v=verbose, f=fileNme,z=only for compressed file  ; ./config ; make ; sudo make install;
 	github1s.com/ to run vs code

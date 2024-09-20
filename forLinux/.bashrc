@@ -8,8 +8,9 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 #PS1='[\u@\h \W]\$ '
-
-
+#export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus
+#export DISPLAY=:0
+#export WAYLAND_DISPLAY=wayland-0
 #export PATH= /usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
 export PATH=$PATH:$HOME/.local/bin
 export EDITOR=nvim
@@ -117,3 +118,7 @@ function bak-forLinux() {
 dv() { q=${2:-$(read -p "Enter video quality (or press Enter for best): " q && echo $q)}; yt-dlp -f "bv*[height<=${q:-10000}]+ba/b" --write-auto-sub --embed-subs -o "~/Videos/%(title)s.%(ext)s" "$1"; }
 dp() { q=${2:-$(read -p "Enter video quality (or press Enter for best): " q && echo $q)}; yt-dlp -f "bv*[height<=${q:-10000}]+ba/b" --write-auto-sub --embed-subs -o "~/Videos/%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s" "$1"; }
 da() { q=${2:-$(read -p "Enter audio quality (6-0, lower is better, or press Enter for best): " q && echo $q)}; yt-dlp -f "ba" -x --audio-format mp3 ${q:+--audio-quality $q} -o "~/Audio/%(title)s.%(ext)s" "$1"; }
+
+torr() {  
+	transmission-cli -U 0 -u 0 -w $HOME/Videos/Movies "$1";
+}
