@@ -23,11 +23,6 @@ dunstify -a "volume" "$DEVICE_NAME" -r 1 -h int:value:"$VOLUME" -t 1000 "$VOLUME
 # Send the notification
 
 # Check if the battery level is below 40%
-if [ $BATTERY_LEVEL -lt 35 ] && [ "$(echo $(acpi -b | awk '{print $3}' | tr -d ','))" == "Discharging" ]; then
-    # Send a notification using dunstify
-    dunstify -u critical "Vostro 3478: Battery Low" "Battery level is at $BATTERY_LEVEL% :-"
-fi
-
 if [ "$BLUETOOTH_BATTERY" -lt 50 ]; then
     dunstify -u critical "$DEVICE_NAME Battery Low" "Battery level is at $BLUETOOTH_BATTERY% :-"
 fi
