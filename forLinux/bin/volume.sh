@@ -4,13 +4,14 @@ VOLUME=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2 * 100}' | tr -d 
 VOLUME_INFO=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{ $2 = ($2 * 100); print }')
 
 BATTERY_LEVEL=$(acpi -b | awk '{print $4}' | tr -d '%,' | head -n 1)
-BLUETOOTH_BATTERY=$(bluetoothctl info | grep Battery | awk '{print $4}' | tr -d '()')
+BLUETOOTH_BATTERY=80;
 
 # Get the default sink name
 DEFAULT_SINK=$(pactl info | grep "Default Sink" | awk '{print $3}')
 
 # Extract the device name from the sink
 if [[ $DEFAULT_SINK == *"bluez"* ]]; then
+    BLUETOOTH_BATTERY=$(bluetoothctl info | grep Battery | awk '{print $4}' | tr -d '()');
     DEVICE_NAME="Rockerz 550 ($BLUETOOTH_BATTERY) -> "
 else
     DEVICE_NAME="Laptop(vostro 3478) $BATTERY_LEVEL -> "

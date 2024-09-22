@@ -1,3 +1,4 @@
+mdcat ~/Sync/testing/Tasks.md && read -n 1 -s && clear
 #
 # ~/.bashrc
 #
@@ -16,6 +17,8 @@ export PATH=$PATH:$HOME/.local/bin
 export EDITOR=nvim
 #CUSTOM-SCRIPT
 
+alias notes='nvim ~/Sync/testing/Tasks.md'
+alias movies='nvim ~/Sync/testing/Movies.md'
 alias b-on='sudo systemctl start bluetooth && bluetoothctl connect "FC:58:FA:58:33:B5"'
 alias b-off='sudo systemctl disable bluetooth && sudo systemctl stop bluetooth'
 alias w-on='nmcli r w on && nmcli d w c "iQOO Z7 5G" password "deadpool"'
@@ -120,5 +123,8 @@ dp() { q=${2:-$(read -p "Enter video quality (or press Enter for best): " q && e
 da() { q=${2:-$(read -p "Enter audio quality (6-0, lower is better, or press Enter for best): " q && echo $q)}; yt-dlp -f "ba" -x --audio-format mp3 ${q:+--audio-quality $q} -o "~/Audio/%(title)s.%(ext)s" "$1"; }
 
 torr() {  
-	transmission-cli -U 0 -u 0 -w $HOME/Videos/Movies "$1";
+	transmission-cli -u 0 -w $HOME/Videos/Movies "$1";
+}
+ai() {
+	tgpt "$*";
 }

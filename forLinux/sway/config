@@ -97,7 +97,7 @@ bindsym XF86MonBrightnessDown exec killall $HOME/.local/bin/brightness.sh; exec 
 #bindsym XF86AudioRaiseVolume exec pamixer --increase 5 && $HOME/.local/bin/volume.sh
 bindsym XF86AudioRaiseVolume  exec killall $HOME/.local/bin/volume.sh ; exec pamixer --increase 5 && $HOME/.local/bin/volume.sh
 bindsym XF86AudioLowerVolume  exec killall $HOME/.local/bin/volume.sh ; exec pamixer --decrease 5 && exec $HOME/.local/bin/volume.sh
-bindsym XF86AudioMute exec pkill -f "$HOME/.local/bin/volume.sh";exec pamixer --toggle-mute && $HOME/.local/bin/volume.sh
+bindsym XF86AudioMute exec killall "$HOME/.local/bin/volume.sh";exec pamixer --toggle-mute && $HOME/.local/bin/volume.sh
 bindsym XF86AudioPlay exec playerctl play-pause
 
 #~ bindsym XF86AudioPrev exec playerctl previous
@@ -131,6 +131,7 @@ bindsym $mod+Shift+o exec swaymsg -t get_tree | jq '.. | select(.focused?) | .pi
 #bindsym $mod+Shift+ctrl+t exec i3-resurrect restore && dunstify "Restored"
 bindsym $mod+s exec dunstify "Sync Enabled" -t 600 && syncthing --no-browser
 bindsym $mod+Shift+s exec dunstify "Sync Disabled" -t 600 && pkill syncthing
+bindsym $mod+Shift+Return exec chromium
 
 
 #

@@ -50,6 +50,7 @@ PACKAGE INSTALLED:
 	i3-reserrect
 	cpu-autofreq deleted tlp
 	cronie
+	mdcat -for md preview in terminal
 	
 COMMANDS:
 	du -sh /var/cache/pacman/pkg/
