@@ -1,4 +1,4 @@
-mdcat ~/Sync/testing/Tasks.md && read -n 1 -s && clear
+#mdcat ~/Sync/testing/Tasks.md && read -n 1 -s && clear
 #
 # ~/.bashrc
 #

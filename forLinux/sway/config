@@ -23,7 +23,7 @@ set $term foot
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 #set $menu dmenu_path | wmenu | xargs swaymsg exec --
-set $menu tofi-drun
+set $menu /home/prem/.local/bin/window.sh
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -133,7 +133,7 @@ bindsym $mod+s exec dunstify "Sync Enabled" -t 600 && syncthing --no-browser
 bindsym $mod+Shift+s exec dunstify "Sync Disabled" -t 600 && pkill syncthing
 bindsym $mod+Shift+Return exec chromium
 
-
+bindsym ctrl+Return exec "dunstctl close"
 #
 # Basics:
 #
