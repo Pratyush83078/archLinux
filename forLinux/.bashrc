@@ -17,8 +17,8 @@ export PATH=$PATH:$HOME/.local/bin
 export EDITOR=nvim
 #CUSTOM-SCRIPT
 
-alias notes='nvim ~/Sync/testing/Tasks.md'
-alias movies='nvim ~/Sync/testing/Movies.md'
+alias notes='nvim ~/syncthing/testing/Tasks.md'
+alias movies='nvim ~/syncthing/testing/Movies.md'
 alias b-on='sudo systemctl start bluetooth && bluetoothctl connect "FC:58:FA:58:33:B5"'
 alias b-off='sudo systemctl disable bluetooth && sudo systemctl stop bluetooth'
 alias w-on='nmcli r w on && nmcli d w c "iQOO Z7 5G" password "deadpool"'

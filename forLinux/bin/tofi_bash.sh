@@ -18,12 +18,9 @@ ALL_COMMANDS=$(echo -e "$HISTORY" )
 SELECTED_COMMAND=$(run_tofi "What Ya need? " "$ALL_COMMANDS")
 
 if [ -n "$SELECTED_COMMAND" ]; then
- 	command="tgpt \"$selection\""
-
-        # Execute tgpt command, clean the output, and remove everything before "Loading" and "Loading" itself
-        output=$(eval "$command" 2>&1 | sed '1,/Loading/d')
-
-        # Notify using dunstify with the cleaned-up output
-        dunstify "$selection" "$output" -t 16000 -i "/home/prem/.config/dunst/"
-
+    dunstify "Executing :- " "$SELECTED_COMMAND" -i "$HOME/Downloads/setting.png" -t 800
+    echo "$SELECTED_COMMAND" >> $HOME/.bash_history
+    
+    # Execute the selected command in an interactive subshell
+    bash -ic "$SELECTED_COMMAND"
 fi
