@@ -5,7 +5,7 @@ run_tofi() {
     local options="$2"
     echo -e "$options" | tofi --prompt "$prompt" --fuzzy-match false --require-match false
 }
-ALL_COMMANDS="$(tac $HOME/clipboard_history.txt)"
+ALL_COMMANDS="$(tac $HOME/syncthing/clipboard_history.txt)"
 
 SELECTED_COMMAND=$(run_tofi "Enter to save: " "$ALL_COMMANDS")
 

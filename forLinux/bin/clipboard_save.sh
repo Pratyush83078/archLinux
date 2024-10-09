@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HISTORY_FILE="$HOME/clipboard_history.txt"
+HISTORY_FILE="$HOME/syncthing/clipboard_history.txt"
 content=$(wl-paste -n)
 if [ -n "$content" ]; then
     single_line=$(echo "$content" | tr '\n' ' ')
